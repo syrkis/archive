@@ -2,7 +2,7 @@
 
 
 echo "Starting sync..."
-aws s3 sync ~/desk/archive s3://syrkis/ \
+aws s3 sync ~/desk/s3 s3://syrkis/ \
     --endpoint-url https://nbg1.your-objectstorage.com \
     --exclude 'main.sh' \
     --exclude '.git/*' \
